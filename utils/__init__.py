@@ -38,7 +38,8 @@ def scatter_classes(xs, y, ax, show_labels=True, silhouette_coefficient=False, *
         elif n_dims == 1:
             x1 = xs[class_mask, 0]
             x2 = np.random.uniform(0, 1, npoints)
-        ax.scatter(x1, x2, label="{}".format(k), **kwargs)
+        
+        ax.scatter(x1, x2, label="{}".format(k) if show_labels else None, **kwargs)
         
     if show_labels:
         ax.legend(loc='upper right')
