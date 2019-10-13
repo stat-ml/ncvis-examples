@@ -3,8 +3,8 @@ Examples for NCVis Python wrapper.
 
 |Notebook| Contents | 
 |-------|:-----------|
-|sample.ipynb  | Introduction to NCVis |
-|big-data.ipynb| Large-scale application case |
+|[sample.ipynb](https://nbviewer.jupyter.org/github/alartum/ncvis-examples/blob/master/sample.ipynb)  | Introduction to NCVis |
+|[big-data.ipynb](https://nbviewer.jupyter.org/github/alartum/ncvis-examples/blob/master/big-data.ipynb)| Large-scale application case |
 
 # Popular Datasets
 
