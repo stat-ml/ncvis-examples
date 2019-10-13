@@ -2,3 +2,5 @@ data/*/
 __pycache__/
 .ipynb_checkpoints/
 big-data/*
+!big-data/baseline.csv
+!big-data/benchmark.csv
