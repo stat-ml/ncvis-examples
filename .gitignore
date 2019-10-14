@@ -4,3 +4,7 @@ __pycache__/
 big-data/*
 !big-data/baseline.csv
 !big-data/benchmark.csv
+annoy_index_file
+*.dat
+*.in
+*.out
