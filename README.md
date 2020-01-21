@@ -6,16 +6,30 @@ Examples for [NCVis](https://github.com/alartum/ncvis) Python wrapper.
 |[sample.ipynb](https://nbviewer.jupyter.org/github/alartum/ncvis-examples/blob/master/sample.ipynb)  | Introduction to NCVis |
 |[big-data.ipynb](https://nbviewer.jupyter.org/github/alartum/ncvis-examples/blob/master/big-data.ipynb)| Large-scale application case |
 
-# Popular Datasets
+# Setup
 
-**Important:** make sure that all required packages are installed:
- ```bash
- $ pip install -r requirements-pip.txt
- ```
- or 
-  ```bash
+## Conda [recommended]
+
+You do not need to setup the environment if using *conda*, all dependencies are installed automatically. 
+```bash
  $ conda install --file requirements-conda.txt
  ```
+
+## Pip [not recommended]
+
+**Important**: be sure to have a compiler with *OpenMP* support. *GCC* has it by default, which is not the case with *clang*. You may need to install *llvm-openmp* library beforehand.  
+
+1. Install **numpy** and **cython** packages (compile-time dependencies):
+    ```bash
+    $ pip install numpy cython
+    ```
+2. Install other packages:
+    ```bash
+    $ pip install -r requirements-pip.txt
+    ```
+
+
+# Popular Datasets
 
 Datasets can be dowloaded by using the *download.sh* script:
 ```bash
@@ -38,8 +52,6 @@ $ bash data/download.sh
 |[COIL-100](http://www1.cs.columbia.edu/CAVE/software/softlib/coil-100.php)|coil100|COIL100|
 |[Mouse scRNA-seq](https://hemberg-lab.github.io/scRNA.seq.datasets/mouse/brain/)|scrna|ScRNA|
 |[Statlog (Shuttle)](https://archive.ics.uci.edu/ml/datasets/Statlog+(Shuttle))|shuttle|Shuttle|
-|[Flow Cytometry](https://flowrepository.org/id/FR-FCM-ZZ36)|flow|*not yet*|
-|[GoogleNews](https://code.google.com/archive/p/word2vec/)|news|*not yet*|
 
 Each dataset can be used in the following way:
 

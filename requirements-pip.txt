@@ -1,4 +1,5 @@
 numpy
+cython
 pandas
 imageio
 progressbar2
