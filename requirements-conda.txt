@@ -5,5 +5,5 @@ progressbar2
 matplotlib
 scikit-learn
 conda-forge::umap-learn
-alartum::ncvis
+conda-forge::ncvis
 kaggle
