@@ -17,7 +17,7 @@ download() {
     # $2 = url1, $3 = url2, ... 
     local dir=$1
     while [ -n "$2" ]; do
-        wget -N -P $dir $2
+        wget --no-check-certificate -N -P $dir $2
         shift
     done
 }
